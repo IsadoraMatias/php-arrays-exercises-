@@ -12,8 +12,10 @@ This repository contains PHP exercises focused on praticing array operations. De
 
 ## 🚀 How to Use
 
-- Start a local PHP server.
+You can view the results in your browser using a local server like XAMPP. 
 
-- Open`index.php` in your browser.
+Clone this repository in your htdocs directory. Start Apache from the XAMPP control panel, the open your browser and go to: 
 
-- Choose a `level` to explore the exercises.
+-`https://localhost/yourfolder/subfolder/filename.php`
+
+Replace with the `url` with the actual path to the file you want to run
