@@ -10,7 +10,11 @@ This repository contains PHP exercises focused on praticing array operations. De
 
 - `level3.php`
 
-## 🚀 How to Use
+## 📁Technologies Used
+
+ `PHP`
+
+## 📋 Requirements and ▶️ Execution
 
 You can view the results in your browser using a local server like XAMPP. 
 
