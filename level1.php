@@ -1,39 +1,46 @@
 <?php
- echo '<strong style="color: green; font-size: 18px;">Ejercicio 1</strong><br>';
+echo '<strong style="color: green; font-size: 18px;">Ejercicio 1</strong><br>';
 
 // crear un array, um loop para contar los numeros y imprimir por el indice
 $numbers = [1, 2, 3, 4, 5];
-for($i=0; $i< count($numbers); $i++){
-    echo $numbers[$i]."<br>";
+for ($i = 0; $i < count($numbers); $i++) {
+    echo $numbers[$i] . "<br>";
 };
 
- echo '<strong style="color: green; font-size: 18px;">Ejercicio 2</strong><br>';
+echo '<strong style="color: green; font-size: 18px;">Ejercicio 2</strong><br>';
 
- $X = array (10, 20, 30, 40, 50,60);
- echo "Before" . count($X) ."<br>";
- print_r($X) ;
- echo "<br>";
- $x = array_splice($X, 2, 1);
+$X = array(10, 20, 30, 40, 50, 60);
+echo "Before" . count($X) . "<br>";
+print_r($X);
+echo "<br>";
+$x = array_splice($X, 2, 1);
 
- echo "After" . count($X) ."<br>";
- print_r($X) .PHP_EOL;
- echo "<br>";
- 
- echo '<strong style="color: green; font-size: 18px;">Ejercicio 3</strong><br>';
+echo "After" . count($X) . "<br>";
+print_r($X) . PHP_EOL;
+echo "<br>";
 
- //create an array of words that all contain the same letter, except one
- $animals = ["dog", "cat","owl","wolf","otter"];
- $find = "o";
- $rightChar = true;
+echo '<strong style="color: green; font-size: 18px;">Ejercicio 3</strong><br>';
 
- //Now check each word and find the one that doesnt have the same letter
-   foreach ($animals as $animal){
-    if(strpos($animal, $find) === false){
-    echo $animal ."<br>";
-    $rightChar = false;
+//create an array of words that all contain the same letter, except one
+$animals = ["dog", "cat", "owl", "wolf", "otter"];
+$find = "o";
+$rightChar = true;
+
+//Now check each word and find the one that doesnt have the same letter
+foreach ($animals as $animal) {
+    if (strpos($animal, $find) === false) {
+        echo $animal . "<br>";
+        $rightChar = false;
     }
-    
+}
+if ($rightChar) {
+    echo "Todas las plabras contienen la letra $find" . "<br>";
+} else {
+    echo "No todas las palabras contienen la letra $find" . "<br>";
 };
+
+echo '<strong style="color: green; font-size: 18px;">Otra resolución</strong><br>';
+//Con un loop manual utilizando los ejemplos del ejercicio para distinguir mayusculas y minusculas
 
 echo '<strong style="color: green; font-size: 18px;">Ejercicio 4</strong><br>';
 
@@ -43,10 +50,9 @@ $profile = [
     "email" => "izzadora@outlook.com",
     "favoriteFood" => "Loves rice"
 ];
- foreach ($profile as $key => $value){
-    echo $value ."<br>";
- }
+foreach ($profile as $key => $value) {
+    echo $value . "<br>";
+}
 
 
- echo "<br><br><a href='index.php'>🔙 Volver a la página principal</a>";
-?> 
+echo "<br><br><a href='index.php'>🔙 Volver a la página principal</a>";
